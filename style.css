@@ -8,7 +8,11 @@
     scroll-behavior: smooth; 
 }
 
-
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 header {
     background-color: #f0f0f0;
     width: 100%;
@@ -46,10 +50,10 @@ section {
 
 .main {
     width: 100%;
-    min-height: 100vh;
+    padding-top: 120px;
     display: flex;
     align-items: center;
-    background-color: #000;
+    background-color: #2f383f;
 }
 
 .main h2 {
@@ -173,7 +177,12 @@ section {
     margin: 20px;
     transition: 0.7s ease;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 .portfolio-card:hover {
    transform: scale(1.1);
 }
@@ -230,6 +239,7 @@ section {
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .footer-title {
@@ -260,7 +270,7 @@ section {
     }
 
     section{
-        padding: 80px 20px;
+        padding: 100px 20px 60px  20px;
     }
 
     .main-content h2{
@@ -289,6 +299,10 @@ section {
 
     .main-content h3{
         font-size: 1.4em;
+    }
+
+    .center {
+        width: 100%;
     }
 }
 
